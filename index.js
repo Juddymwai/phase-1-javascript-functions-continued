@@ -10,10 +10,11 @@ let mondayWork = function (string = "go to the office"){
 }
  console.log (mondayWork('work from home'));
 
- function wrapAdjective(){
+ function wrapAdjective(string="*"){
      
      return function (innerpara="special"){
-         return `You are ${innerpara}`
+         return `You are ${string}${innerpara}${string}!`
 
      };
  }
+ wrapAdjective();
